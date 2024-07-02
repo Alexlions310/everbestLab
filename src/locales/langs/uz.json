@@ -1,0 +1,114 @@
+{
+  "links": {
+    "main": "Asosiy",
+    "whyUs": "Nega biz",
+    "clients": "Mijozlarimiz",
+    "tarifs": "Tariflar",
+    "team": "Jamoa",
+    "contact": "Bog'lanish"
+  },
+  "button": {
+    "freeConsulting": "Bepul konsultatsiya",
+    "select": "Tanlash",
+    "contact": "Bog'lanish",
+    "phoneNum": "Telefon raqam",
+    "email": "Email",
+    "telegram": "Telegram",
+    "send": "Bog'lanish",
+    "isAgree": "Men ",
+    "isAgree1": " foydalanuvchi shartnomasi ",
+    "isAgree2": " shartlarini qabul qilaman"
+  },
+  "text": {
+    "notOnlyWeb": "Sizga shunchaki sayt emas ",
+    "chempPartner": "Elektron tijorat sohasidagi Chempion hamkorga ishoning",
+    "successfulProjects": "Muvaffaqiyatli loyixalar",
+    "happyClients": "Mamnun mijozlar",
+    "experiencedEmployees": "Malakali mutaxassislar",
+    "feedback30": "30 dan ortiq mijozlar tomonidan 4/5 baholangan",
+    "leaveNum": "Bizga raqamingizni qoldiring va mutahhasislarimiz Sizga 1 soat ichida aloqaga chiqishadi.",
+    "moreInfo": "Biz haqimizda ko‘proq ma’lumot va tijorat taklifini olish uchun so‘rov qoldiring yoki ",
+    "moreInfo1": " elektron pochta manziliga xabaringizni yozing."
+  },
+  "weOffer": {
+    "subTitle": "Muvaffaqiyatimizning asosiy kuchi",
+    "feedBackInfo":"Mijozlarimizni ishonchli hamkorlarimiz deb hisoblaymiz va ular rivojlanishi asosiy maqsadimizdir",
+    "completeSolutions": "To’liq yechimlar",
+    "completeSolutionsEx": "Siz biznesingizga fokus qarating va barcha texnik ishlarni bizga qoldiring.​",
+    "auditAndTraining": "Audit va treyning",
+    "auditAndTrainingEx": "Jarayonni onlaynga o’tish bo’yicha to’liq konsultatsiya va foydalanish bo’yicha bepul o’rgatamiz.​",
+    "manageWithNums": "Raqamlar bilan boshqarish",
+    "manageWithNumsEx": "Sotuvlar, mijozlar, o’sish ko’rsatkichlari va xk. — barchasini haqiqiy raqamlar bilan boshqarishingizda yordam beramiz.",
+    "modernInterface": "Zamonaviy va qulay interfeys",
+    "modernInterfaceEx": "Biz doim izlanishdamiz va Sizga eng so’ngi yechimlarni taqdim etamiz — mijozlaringiz Sizdan manmun bo’lishiga birga erishamiz.",
+    "support": "24/7 qo’llab-quvvatlash",
+    "supportEx": "Biz doim onlaynmiz va tizim muntazam ishlashini ta’minlaymiz.​",
+    "moneyReturn": "Pulni qaytarish kafolati",
+    "moneyReturnEx": "Loyihani kelishilgan shartlarda qilib bera olmagan taqdirimizda pulingizni 20 ish kunida qaytarib beramiz."
+  },
+  "title": {
+    "toliq": "To'liq",
+    "savdo": "savdo",
+    "mexanizmi": "mexanizmi",
+    "kerak": "kerak!",
+    "whyUs": "Nega bizni tanlashadi?",
+    "clientsFeedback": "Mijozlarimiz fikri",
+    "ourTarifs": "Bizning tariflar",
+    "whichTarif": "Qaysi tarifni tanlashni bilmayabsizmi?",
+    "ourTeam": "Bizning jamoa",
+    "moreInfo": "Ko'proq ma'lumot uchun biz bilan bog'laning.",
+    "seoPlace": "SEO uchun  joy"
+  },
+  "feedBack": {
+    "owner": "Husan Mamasaidov",
+    "company": "MFaktor",
+    "text": "MFaktor loyihasi oxirgi bir yilda EverbestLab bilan hamkorlik qilib kelamiz. Saytlarimiz, botlarimiz va onlayn sotuvlarimizni yaxshilashda katta hizmatlari bor. Sifatli servis — kechayu-kun sorasak tog'irlab berishadi. Biz hamkorligimizdan xursandmiz."
+  },
+  "feedBack2": {
+    "owner": "Gulsara Sharipova",
+    "company": "IT Park School",
+    "text": "Jamoa talabingizni tushunib ishlaydi.  Sayt yaratish jarayoni stressiz o'tdi. Mayda detallargacha e'tibor berishdi - hatto fotografimiz bilan bog'lanib, rang bo'yicha tavsiyalar berishdi."
+  },
+  "feedBack3": {
+    "owner": "Yusupov Akbar",
+    "company": "Anorhome",
+    "text": "Kompaniyamiz uchun veb portalga buyurtma bergandik. Juda tez va sifatli tayyorlab berishdi. Doim aloqada bo'lib, kamchiliklarni tez bartaraf qilishdi. Katta raxmat!"
+  },
+  "tarifInfo": {
+    "standartDesign": "Standart dizayn",
+    "orderManagent": "Buyurtmalarni boshqarish",
+    "payment": "To'lov: Payme yoki Click",
+    "lang": "Tillar: O’zbek, Rus",
+    "simpleSEO": "Boshlang’ich SEO",
+    "productDesign": "Mahsulot dizayni",
+    "sms": "SMS integratsiya",
+    "sklad": "Sklad integratsiya",
+    "mainSEO": "Asosiy SEO",
+    "allProFeat": "Pro tarifidagi barchasi",
+    "uxAndUi": "UX/UI",
+    "paymentVisa": "To’lov: Visa, Mastercard.",
+    "delivery": "Yetkazish Tizimi: BTS, FARGO",
+    "telegram": "Telegram WebApp",
+    "analytics": "To’liq savdo analitikasi",
+    "fullSEO": "To’liq SEO",
+    "mobileApp": "Mobil ilova"
+  },
+  "form": {
+    "name": "Ismingiz",
+    "phone": "Telefon raqamingiz",
+    "company": "Kompaniyangiz",
+    "send": "Yuborish"
+  },
+  "footerNote": "EverbestLab — e-kommersiyalar uchun baxtli va sodiq mijozlarni olib keluvchi texnologik kompaniya.",
+  "allRights": "Barcha huquqlar himoyalangan.",
+  "address": "Manzil: Toshkent, Yunusobod, Yangi Tarnov ko'chasi,",
+  "notes": "Havolalar",
+  "performance": "Performance",
+  "seo": "SEO",
+  "bestPractices": "Best Practices",
+  "common": "Ommabop",
+  "year": "YILL",
+  "inBusiness": "BIZNESDA",
+  "inIT": "ITDA",
+  "inEcommerce": "E-KOMMERSIYADA"
+}
