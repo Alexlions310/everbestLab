@@ -49,7 +49,7 @@
     "toliq": "Нужен",
     "savdo": "полноценный",
     "mexanizmi": "торговый",
-    "kerak":"движок!",
+    "kerak": "движок!",
     "whyUs": "Почему выбирают нас?",
     "clientsFeedback": "Отзывы наших клиентов",
     "ourTarifs": "Наши тарифы",
@@ -105,5 +105,8 @@
   "year": "ЛЕТ",
   "inBusiness": "В БИЗНЕСЕ",
   "inIT": "В ИТ-СФЕРЕ",
-  "inEcommerce": "В E-COMMERCE"
+  "inEcommerce": "В E-COMMERCE",
+  "inRetail": "В RETAIL",
+  "e-kom": "В E-COM МАРКЕТИНГ",
+  "global-company": "В ГЛОБ-КОМП"
 }

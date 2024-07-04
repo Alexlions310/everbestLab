@@ -1,6 +1,6 @@
 import { m } from 'framer-motion';
 import PropTypes from 'prop-types';
-
+import Link from 'next/link';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
@@ -43,7 +43,10 @@ export default function HomeTeam() {
   });
 
   return (
-    <Container component={MotionViewport} sx={{ textAlign: 'center', py: { xs: 8, md: 15 }, pb:{md:10} }}>
+    <Container
+      component={MotionViewport}
+      sx={{ textAlign: 'center', py: { xs: 8, md: 15 }, pb: { md: 10 } }}
+    >
       <m.div variants={varFade().inUp}>
         <Typography variant="h2" sx={{ my: 3 }}>
           {t('title.ourTeam')}
@@ -106,10 +109,10 @@ export default function HomeTeam() {
 // ----------------------------------------------------------------------
 
 function MemberCard({ member }) {
-  const { name, line, line2, avatarUrl } = member;
+  const { name, line, line2, avatarUrl, linkedInUrl } = member;
   const socials = useSocialsData();
   return (
-    <Card key={name}>
+    <Card key={name} style={{ position: 'relative' }}>
       <Typography variant="subtitle1" sx={{ mt: 2.5, mb: 0.5 }}>
         {name}
       </Typography>
@@ -126,19 +129,26 @@ function MemberCard({ member }) {
         <Image alt={name} src={avatarUrl} ratio="1/1" sx={{ borderRadius: 2 }} />
       </Box>
 
-      <Stack direction="row" alignItems="center" justifyContent="center" sx={{ p: 2 }}>
+      <Stack
+        direction="row"
+        alignItems="center"
+        justifyContent="center"
+        sx={{ p: 2, position: 'absolute', zIndex: 123, bottom: '20px', right: '20px' }}
+      >
         {socials?.map((social) => (
-          <IconButton
-            key={social.name}
-            sx={{
-              color: social.color,
-              '&:hover': {
-                bgcolor: alpha(social.color, 0.08),
-              },
-            }}
-          >
-            <Iconify icon={social.icon} />
-          </IconButton>
+          <Link href={linkedInUrl}>
+            <IconButton
+              key={social.name}
+              sx={{
+                color: social.color,
+                '&:hover': {
+                  bgcolor: alpha(social.color, 0.4),
+                },
+              }}
+            >
+              <Iconify icon={social.icon} />
+            </IconButton>
+          </Link>
         ))}
       </Stack>
     </Card>

@@ -32,7 +32,7 @@
   },
   "weOffer": {
     "subTitle": "Muvaffaqiyatimizning asosiy kuchi",
-    "feedBackInfo":"Mijozlarimizni ishonchli hamkorlarimiz deb hisoblaymiz va ular rivojlanishi asosiy maqsadimizdir",
+    "feedBackInfo": "Mijozlarimizni ishonchli hamkorlarimiz deb hisoblaymiz va ular rivojlanishi asosiy maqsadimizdir",
     "completeSolutions": "To’liq yechimlar",
     "completeSolutionsEx": "Siz biznesingizga fokus qarating va barcha texnik ishlarni bizga qoldiring.​",
     "auditAndTraining": "Audit va treyning",
@@ -74,6 +74,16 @@
     "company": "Anorhome",
     "text": "Kompaniyamiz uchun veb portalga buyurtma bergandik. Juda tez va sifatli tayyorlab berishdi. Doim aloqada bo'lib, kamchiliklarni tez bartaraf qilishdi. Katta raxmat!"
   },
+  "feedBack4": {
+    "owner": "Maruf",
+    "company": "DTM Trucking Inc",
+    "text": "EverbestLab jamoasining ishi haqiqatan ham professional - ular bizning ehtiyojlarimizni aniqlash uchun yetarlicha vaqt ajratishdi va kompaniyamizning raqamli muvaffaqiyati uchun barcha kerakli ishlarni qilishdi. Tavsiya qilaman!"
+  },
+  "feedBack5": {
+    "owner": "J.Ruzmat",
+    "company": "Joyla",
+    "text": "EverbestLab jamoasi bilan 3 yildan ortiq hamkorlik qilganimdan xursandman. Ayniqsa so'rovlarga vaqtida javob berish va doimiy texnik qo'llab-quvvatlash borasida ajoyib ishlashadi."
+  },
   "tarifInfo": {
     "standartDesign": "Standart dizayn",
     "orderManagent": "Buyurtmalarni boshqarish",
@@ -107,8 +117,11 @@
   "seo": "SEO",
   "bestPractices": "Best Practices",
   "common": "Ommabop",
-  "year": "YILL",
+  "year": "yil",
   "inBusiness": "BIZNESDA",
-  "inIT": "ITDA",
-  "inEcommerce": "E-KOMMERSIYADA"
+  "inIT": "ITda",
+  "inEcommerce": "E-kommersiyada",
+  "inRetail": "riteylda",
+  "e-kom": "e-kom marketingda",
+  "global-company":"global kompaniyada"
 }

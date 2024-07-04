@@ -32,8 +32,8 @@ export default function Footer() {
           name: t(`address`),
           icon: '/new/location.svg',
         },
-        { name: 'everbestlab@mail.ru', icon: '/new/mail.svg' },
-        { name: '+99894 498 65 12', icon: '/new/call.svg' },
+        { name: 'bobur@everbestlab.com', icon: '/new/mail.svg' },
+        { name: '+99888 744 11 10', icon: '/new/call.svg' },
       ],
     },
   ];
@@ -147,10 +147,9 @@ export default function Footer() {
                       component="div"
                       variant="body2"
                       sx={{
-                        color: 'text.disabled',
                         display: 'flex',
                         justifyContent: mdUp ? 'flex-start' : 'flex-start',
-                        alignItems: 'center',
+                        alignItems: 'flex-start',
                         gap: '10px',
                         width: { xs: '350px' },
                       }}

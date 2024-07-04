@@ -73,12 +73,12 @@ export default function HomeClientsFeedback() {
         imgUrl: '/new/anorHome.jpg',
       },
       {
-        postedDate: t('feedBack2.company'),
-        name: t('feedBack2.owner'),
+        postedDate: t('feedBack4.company'),
+        name: t('feedBack4.owner'),
         icon: '/new/quote.svg',
         title: 'To’liq yechimlar',
-        description: t('feedBack2.text'),
-        imgUrl: '/new/women.png',
+        description: t('feedBack4.text'),
+        imgUrl: '/new/maruf.png',
       },
     ],
     [t]
@@ -87,20 +87,28 @@ export default function HomeClientsFeedback() {
   const CARDS2 = useMemo(
     () => [
       {
-        postedDate: t('feedBack3.company'),
-        name: t('feedBack3.owner'),
-        icon: '/new/quote.svg',
-        title: 'To’liq yechimlar',
-        description: t('feedBack3.text'),
-        imgUrl: '/new/anorHome.jpg',
-      },
-      {
         postedDate: t('feedBack2.company'),
         name: t('feedBack2.owner'),
         icon: '/new/quote.svg',
         title: 'To’liq yechimlar',
         description: t('feedBack2.text'),
         imgUrl: '/new/women.png',
+      },
+      {
+        postedDate: t('feedBack5.company'),
+        name: t('feedBack5.owner'),
+        icon: '/new/quote.svg',
+        title: 'To’liq yechimlar',
+        description: t('feedBack5.text'),
+        imgUrl: '/new/jasur.svg',
+      },
+      {
+        postedDate: t('feedBack4.company'),
+        name: t('feedBack4.owner'),
+        icon: '/new/quote.svg',
+        title: 'To’liq yechimlar',
+        description: t('feedBack4.text'),
+        imgUrl: '/new/maruf.png',
       },
       {
         postedDate: t('feedBack.company'),
@@ -109,14 +117,6 @@ export default function HomeClientsFeedback() {
         title: 'To’liq yechimlar',
         description: t('feedBack.text'),
         imgUrl: '/new/mfactor.svg',
-      },
-      {
-        postedDate: t('feedBack2.company'),
-        name: t('feedBack2.owner'),
-        icon: '/new/quote.svg',
-        title: 'To’liq yechimlar',
-        description: t('feedBack2.text'),
-        imgUrl: '/new/women.png',
       },
       {
         postedDate: t('feedBack3.company'),
@@ -249,7 +249,7 @@ export default function HomeClientsFeedback() {
                 sx={{
                   color: 'text.secondary',
                   display: '-webkit-box',
-                  WebkitLineClamp: 3,
+                  WebkitLineClamp: 4,
                   WebkitBoxOrient: 'vertical',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
@@ -340,7 +340,7 @@ export default function HomeClientsFeedback() {
                 sx={{
                   color: 'text.secondary',
                   display: '-webkit-box',
-                  WebkitLineClamp: 3,
+                  WebkitLineClamp: 4,
                   WebkitBoxOrient: 'vertical',
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',

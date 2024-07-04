@@ -173,10 +173,11 @@ export default function HomeHero() {
       ml={mdUp ? 0 : 2}
       spacing={4}
       direction="row"
-      mt={mdUp ? '12%' : '5%'}
+      mt={mdUp ? '16%' : '20%'}
       justifyContent="center"
       sx={{
         mb: { xs: 8, md: 0 },
+        pb: { xs: '80px', md: '0px' },
       }}
     >
       {[
@@ -226,7 +227,7 @@ export default function HomeHero() {
         maxWidth: 580,
         opacity: opacity > 0 ? opacity : 0,
         mt: {
-          md: `-${HEADER.H_DESKTOP + 10 + percent * 2.5}px`,
+          md: `-${HEADER.H_DESKTOP}px`,
         },
       }}
     >
@@ -340,6 +341,7 @@ export default function HomeHero() {
           sx={{
             position: 'relative',
             borderRadius: 4,
+            marginTop: '10%',
             border: `1.5px solid ${lightMode ? theme.palette.grey[900] : theme.palette.grey[500]}`,
           }}
         >
@@ -347,8 +349,8 @@ export default function HomeHero() {
             sx={{
               position: 'relative',
               borderRadius: 4,
-              border: `17px solid ${lightMode ? theme.palette.grey[900] : theme.palette.grey[800]}`,
               padding: 0,
+              border: `17px solid ${lightMode ? theme.palette.grey[900] : theme.palette.grey[800]}`,
             }}
           >
             <video
@@ -445,10 +447,7 @@ export default function HomeHero() {
         }}
       >
         <StyledWrapper>
-          <Container
-            component={MotionContainer}
-            sx={{ height: 1,  md: { pt: '12%' } }}
-          >
+          <Container component={MotionContainer} sx={{ height: 1, md: { pt: '12%' } }}>
             <Grid container columnSpacing={{}} sx={{ height: { md: 1, xs: '130%' } }}>
               <Grid xs={12} md={6}>
                 {renderDescription}
