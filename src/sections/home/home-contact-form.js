@@ -21,8 +21,8 @@ export default function HomeContactForm() {
   const [currentTab, setCurrentTab] = useState(1);
   const theme = useTheme();
   const [accepted, setAccepted] = useState(true);
-
   const mdUp = useResponsive('up', 'md');
+  const [clicked, setClicked] = useState(1);
 
   const lightMode = theme.palette.mode === 'light';
 
@@ -92,6 +92,9 @@ export default function HomeContactForm() {
                 key={tab.val}
                 value={tab.val}
                 label={tab.name}
+                onClick={() => {
+                  setClicked(tab.val);
+                }}
                 sx={{
                   transition: 'all 0.4s ease',
                   background:
@@ -106,10 +109,33 @@ export default function HomeContactForm() {
             ))}
           </Tabs>
 
-          <m.div variants={varFade().inUp} style={{ width: '100%', marginRight: '2px' }}>
-            <TextField variant="filled" fullWidth label={t('form.phone')} />
-          </m.div>
-
+          {clicked === 1 && (
+            <m.div style={{ width: '100%', marginRight: '2px' }}>
+              <TextField
+                required
+                type="number"
+                variant="filled"
+                fullWidth
+                label={t('form.phone')}
+              />
+            </m.div>
+          )}
+          {clicked === 2 && (
+            <m.div style={{ width: '100%', marginRight: '2px' }}>
+              <TextField required type="email" variant="filled" fullWidth label={t('form.email')} />
+            </m.div>
+          )}
+          {clicked === 3 && (
+            <m.div style={{ width: '100%', marginRight: '2px' }}>
+              <TextField
+                required
+                type="email"
+                variant="filled"
+                fullWidth
+                label={t('form.telegram')}
+              />
+            </m.div>
+          )}
           <m.div variants={varFade().inUp} style={{ width: '100%', marginRight: '2px' }}>
             <TextField variant="filled" fullWidth label={t('form.name')} />
           </m.div>

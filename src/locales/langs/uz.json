@@ -106,6 +106,8 @@
   "form": {
     "name": "Ismingiz",
     "phone": "Telefon raqamingiz",
+    "email": "Elektron pochtangiz",
+    "telegram": "Foydalanuvchi nomi",
     "company": "Kompaniyangiz",
     "send": "Yuborish"
   },
@@ -123,5 +125,5 @@
   "inEcommerce": "E-kommersiyada",
   "inRetail": "riteylda",
   "e-kom": "e-kom marketingda",
-  "global-company":"global kompaniyada"
+  "global-company": "global kompaniyada"
 }
