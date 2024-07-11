@@ -110,5 +110,7 @@
   "inEcommerce": "В E-COMMERCE",
   "inRetail": "В RETAIL",
   "e-kom": "В E-COM МАРКЕТИНГ",
-  "global-company": "В ГЛОБ-КОМП"
+  "global-company": "В ГЛОБ-КОМП",
+  "contactDetail": "Пожалуйста, оставьте свой номер телефона, адрес электронной почты или имя пользователя Telegram, чтобы связаться с вами",
+  "msgSuccess": "Ваше сообщение было отправлено успешно"
 }

@@ -23,9 +23,46 @@ export default function HomeContactForm() {
   const [accepted, setAccepted] = useState(true);
   const mdUp = useResponsive('up', 'md');
   const [clicked, setClicked] = useState(1);
-
   const lightMode = theme.palette.mode === 'light';
 
+  const [name, setName] = useState('');
+  const [company, setCompany] = useState('');
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNum, setPhoneNum] = useState('');
+
+  async function handleSubmit() {
+    const telegram_bot_id = '7499883606:AAFjxrPErT1JTtLNgb0UefQENYTU5wd4Jmo';
+    const chat_id = 758384921;
+    let contact = 'tg: ' + username + ' email: ' + email + ' tel:' + phoneNum;
+    const text = `Ismi: ${name}\nKompaniya: ${company}\n${contact}`;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (phoneNum.length < 9 && !emailRegex.test(email) && username.length == 0) {
+      alert(t('contactDetail'));
+    } else {
+      const response = await fetch(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chat_id,
+          text,
+        }),
+      });
+
+      if (response.ok) {
+        alert(t('msgSuccess'));
+        setName('');
+        setEmail('');
+        setPhoneNum('');
+        setUsername('');
+        setCompany('');
+      } else {
+        alert('Error sending message');
+      }
+    }
+  }
   const contactMethods = [
     { name: t('button.phoneNum'), val: 1 },
     { name: t('button.email'), val: 2 },
@@ -112,24 +149,36 @@ export default function HomeContactForm() {
           {clicked === 1 && (
             <m.div style={{ width: '100%', marginRight: '2px' }}>
               <TextField
+                value={phoneNum}
                 required
                 type="number"
                 variant="filled"
                 fullWidth
+                onChange={(e) => setPhoneNum(e.target.value)}
                 label={t('form.phone')}
               />
             </m.div>
           )}
           {clicked === 2 && (
             <m.div style={{ width: '100%', marginRight: '2px' }}>
-              <TextField required type="email" variant="filled" fullWidth label={t('form.email')} />
+              <TextField
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                value={email}
+                type="email"
+                variant="filled"
+                fullWidth
+                label={t('form.email')}
+              />
             </m.div>
           )}
           {clicked === 3 && (
             <m.div style={{ width: '100%', marginRight: '2px' }}>
               <TextField
+                onChange={(e) => setUsername(e.target.value)}
                 required
-                type="email"
+                value={username}
+                type="text"
                 variant="filled"
                 fullWidth
                 label={t('form.telegram')}
@@ -137,11 +186,23 @@ export default function HomeContactForm() {
             </m.div>
           )}
           <m.div variants={varFade().inUp} style={{ width: '100%', marginRight: '2px' }}>
-            <TextField variant="filled" fullWidth label={t('form.name')} />
+            <TextField
+              onChange={(e) => setName(e.target.value)}
+              variant="filled"
+              fullWidth
+              value={name}
+              label={t('form.name')}
+            />
           </m.div>
 
           <m.div variants={varFade().inUp} style={{ width: '100%', marginRight: '2px' }}>
-            <TextField variant="filled" fullWidth label={t('form.company')} />
+            <TextField
+              onChange={(e) => setCompany(e.target.value)}
+              variant="filled"
+              fullWidth
+              value={company}
+              label={t('form.company')}
+            />
           </m.div>
 
           {/* <m.div variants={varFade().inUp}>
@@ -169,6 +230,7 @@ export default function HomeContactForm() {
               color="primary"
               size="large"
               variant="contained"
+              onClick={() => handleSubmit()}
               // disabled={!accepted}
             >
               {t('form.send')}

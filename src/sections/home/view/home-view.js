@@ -47,11 +47,8 @@ export default function HomeView() {
         </section>
         <section id={'clients'}>
           <HomeClientsFeedback />
-        </section>
-        <section>
           <HomePartners />
         </section>
-
         <section id={'tarifs'}>
           <HomePricing />
         </section>
@@ -63,7 +60,7 @@ export default function HomeView() {
         <section id={'contact-us'}>
           <HomeContactForm />
         </section>
-        <HomeSeo />
+        {/* <HomeSeo /> */}
       </Box>
     </MainLayout>
   );

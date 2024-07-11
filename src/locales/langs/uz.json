@@ -125,5 +125,7 @@
   "inEcommerce": "E-kommersiyada",
   "inRetail": "riteylda",
   "e-kom": "e-kom marketingda",
-  "global-company": "global kompaniyada"
+  "global-company": "global kompaniyada",
+  "contactDetail": "Iltimos siz bilan bog'lanish uchun telefon nomer, email yoki telegram foydalanuvchi nomingizni qoldiring",
+  "msgSuccess": "Habaringiz muvaffaqiyatli jo'natildi"
 }
