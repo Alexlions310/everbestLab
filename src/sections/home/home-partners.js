@@ -13,10 +13,10 @@ export default function HomePartners() {
   const mdUp = useResponsive('up', 'md');
   return (
     <Stack>
-      {mdUp && <StyledEllipseTop />}
+      {/* {mdUp && <StyledEllipseTop />} */}
 
-      {mdUp && (
-        <StyledEllipseBottomW>
+      {/* {mdUp && ( */}
+        {/* <StyledEllipseBottomW> */}
           <Stack
             component={Container}
             direction={'row'}
@@ -67,10 +67,10 @@ export default function HomePartners() {
                 );
               })}
           </Stack>
-        </StyledEllipseBottomW>
-      )}
+        {/* </StyledEllipseBottomW> */}
+      {/* )} */}
 
-      <StyledEllipseBottom />
+      {/* <StyledEllipseBottom /> */}
     </Stack>
   );
 }

@@ -47,7 +47,7 @@ export default function HomeView() {
         </section>
         <section id={'clients'}>
           <HomeClientsFeedback />
-          <HomePartners />
+          {/* <HomePartners /> */}
         </section>
         <section id={'tarifs'}>
           <HomePricing />

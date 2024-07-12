@@ -32,24 +32,26 @@ export default function HomeContactForm() {
   const [phoneNum, setPhoneNum] = useState('');
 
   async function handleSubmit() {
-    const telegram_bot_id = '7499883606:AAFjxrPErT1JTtLNgb0UefQENYTU5wd4Jmo';
-    const chat_id = 758384921;
+    let chat_id = 758384921;
     let contact = 'tg: ' + username + ' email: ' + email + ' tel:' + phoneNum;
     const text = `Ismi: ${name}\nKompaniya: ${company}\n${contact}`;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (phoneNum.length < 9 && !emailRegex.test(email) && username.length == 0) {
       alert(t('contactDetail'));
     } else {
-      const response = await fetch(`https://api.telegram.org/bot${telegram_bot_id}/sendMessage`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          chat_id,
-          text,
-        }),
-      });
+      const response = await fetch(
+        `https://api.telegram.org/bot7499883606:AAFjxrPErT1JTtLNgb0UefQENYTU5wd4Jmo/sendMessage`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id,
+            text,
+          }),
+        }
+      );
 
       if (response.ok) {
         alert(t('msgSuccess'));
