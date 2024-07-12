@@ -76,7 +76,7 @@ export default function HomeContactForm() {
   }, []);
 
   return (
-    <Container sx={{ py: { md: 5, xs: 2 }, mb: { md: 4 }, pt: { md: 16 } }}>
+    <Container sx={{ py: { md: 5, xs: 2 }, mb: { xs: 12 }, pt: { md: 16 } }}>
       <Stack
         component={MotionViewport}
         direction={mdUp ? 'row' : 'column'}

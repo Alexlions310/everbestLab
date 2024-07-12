@@ -15,7 +15,6 @@ import { styled } from '@mui/system';
 import { useTranslate } from 'src/locales';
 import { useMemo } from 'react';
 import HomePartners from './home-partners';
-
 // ----------------------------------------------------------------------
 export const StyledBlurLeft = styled('div')(({ theme }) => ({
   top: -40,
@@ -203,7 +202,7 @@ export default function HomeClientsFeedback() {
         position="relative"
         sx={{
           transform: { md: 'translateX(-60px)', xs: 'translateX(-30px)' },
-          // maxHeight: { md: 250, xs: 250 },
+          maxHeight: { md: 250, xs: 250 },
           maxWidth: { md: '1400px', xs: '300px' },
           margin: '0 auto',
           mb: { xs: 0 },
@@ -284,7 +283,7 @@ export default function HomeClientsFeedback() {
         ))}
         {mdUp && <StyledBlurRight right={-360} />}
       </Stack>
-      {/* 
+
       <Stack
         gap={{ xs: 2, lg: 2 }}
         alignItems="center"
@@ -295,7 +294,7 @@ export default function HomeClientsFeedback() {
         sx={{
           mt: { xs: 2, md: 2 },
           transform: { md: 'translateX(-320px)', xs: 'translateX(-920px)' },
-          // maxHeight: { md: 250, xs: 150 },
+          maxHeight: { md: 250, xs: 150 },
           maxWidth: { md: '1300px', xs: '600px' },
           margin: '0 auto',
         }}
@@ -374,8 +373,7 @@ export default function HomeClientsFeedback() {
           </m.div>
         ))}
         {mdUp && <StyledBlurRight right={-480} />}
-      </Stack> */}
-      <Typography>flknkdnfkdjfn</Typography>
+      </Stack>
       <Stack>
         <HomePartners />
       </Stack>
