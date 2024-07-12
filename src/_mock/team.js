@@ -71,7 +71,7 @@ export function useTeamData() {
         line: `10 ${t('year')}` + ' ' + `${t('inRetail')}`,
         line2: `+3 ${t('year')}` + ' ' + `${t('e-kom')}`,
         avatarUrl: 'new/team/natalya.png',
-        linkedInUrl: '',
+        linkedInUrl: 'https://www.linkedin.com/company/everbestlab/mycompany/',
       },
       {
         id: '4',
@@ -87,7 +87,7 @@ export function useTeamData() {
         line: `8 ${t('year')}` + ' ' + `${t('inBusiness')}`,
         line2: `+3 ${t('year')}` + ' ' + `${t('inEcommerce')}`,
         avatarUrl: 'new/team/shaxyora.png',
-        linkedInUrl: '',
+        linkedInUrl: 'https://www.linkedin.com/company/everbestlab/mycompany/',
       },
       {
         id: '6',
@@ -104,6 +104,14 @@ export function useTeamData() {
         line2: `+4 ${t('year')}`,
         avatarUrl: 'new/team/xudayor.jpg',
         linkedInUrl: 'https://www.linkedin.com/in/xudoyor-atajanov-a3155b1b7/',
+      },
+      {
+        id: '8',
+        name: 'Erkinov Davlatyor',
+        line: `+3 ${t('year') + ' ' + t('inIT')},`,
+        line2: `+1 ${t('year') + ' ' + t('inEcommerce')}`,
+        avatarUrl: 'new/team/davlatyor.jpeg',
+        linkedInUrl: 'https://www.linkedin.com/in/davlatyor-erkinov-598337230/',
       },
     ],
     [t]
