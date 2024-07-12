@@ -16,5 +16,5 @@ export const partnerList = [
        {path:'/new/client/client4Grey.svg', width: 138.5,height: 40},
        {path:'/new/client/client5Grey.svg', width: 132,height: 40},
        {path:'/new/client/client6Grey.png', width: 120,height: 40},
-       {path:'/new/client/client7Grey.svg', width: 120,height: 40},
+       {path:'/new/client/client7Grey.png', width: 120,height: 40},
        ]
