@@ -62,9 +62,8 @@ export default function HomeHesitation() {
             color="primary"
             size="large"
             variant="contained"
-            target="_blank"
             rel="noopener"
-            href={'/'}
+            href={'#contact-us'}
             fullWidth={!mdUp}
             aria-label="send form"
           >
