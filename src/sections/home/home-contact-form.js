@@ -85,12 +85,6 @@ export default function HomeContactForm() {
           setCompany('');
         })
         .catch((error) => {
-          alert(t('msgSuccess'));
-          setName('');
-          setEmail('');
-          setPhoneNum('');
-          setUsername('');
-          setCompany('');
           console.log(error);
         });
     }

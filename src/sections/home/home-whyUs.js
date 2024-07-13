@@ -17,7 +17,6 @@ import Image from 'next/image';
 
 // ----------------------------------------------------------------------
 
-
 export default function HomeWhyUs() {
   const { t } = useTranslate();
   const mdUp = useResponsive('up', 'md');
@@ -63,7 +62,7 @@ export default function HomeWhyUs() {
     left: 0,
     width: '100%',
     padding: '40px 5px',
-    backgroundColor:theme.palette.background.default,
+    backgroundColor: theme.palette.background.default,
     position: 'absolute',
   }));
 
@@ -134,7 +133,7 @@ export default function HomeWhyUs() {
       component={MotionViewport}
       sx={{
         py: { xs: 10, md: 15 },
-        pt: {  md: 12 },
+        pt: { md: 12 },
         position: 'relative',
       }}
     >
@@ -144,7 +143,7 @@ export default function HomeWhyUs() {
         sx={{
           textAlign: 'center',
           mb: { xs: 5, md: 8 },
-          mt: { xs: 8,  },
+          mt: { xs: 8 },
         }}
       >
         <m.div variants={varFade().inUp}>
@@ -250,8 +249,7 @@ export default function HomeWhyUs() {
             variant="outlined"
             color="primary"
             sx={{ padding: '10px 20px', fontSize: '16px', fontWeight: '500' }}
-            target="_blank"
-            href={'/'}
+            href={'#contact-us'}
             aria-label="free consulting"
           >
             {t('button.freeConsulting')}
