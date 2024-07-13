@@ -59,7 +59,6 @@ export default function HomeContactForm() {
     } else {
       const myHeaders = new Headers();
       myHeaders.append('Content-Type', 'application/json');
-
       const raw = JSON.stringify({
         yourName: name,
         email: contact,
