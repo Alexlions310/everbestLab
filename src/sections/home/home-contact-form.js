@@ -32,39 +32,70 @@ export default function HomeContactForm() {
   const [phoneNum, setPhoneNum] = useState('');
 
   async function handleSubmit() {
-    let chat_id = 758384921;
-    let contact = 'tg: ' + username + ' email: ' + email + ' tel:' + phoneNum;
-    const text = `Ismi: ${name}\nKompaniya: ${company}\n${contact}`;
+    // let chat_id = 758384921;
+    // let contact = 'tg: ' + username + ' email: ' + email + ' tel:' + phoneNum;
+    // const text = `Ismi: ${name}\nKompaniya: ${company}\n${contact}`;
+    // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // if (phoneNum.length < 9 && !emailRegex.test(email) && username.length == 0) {
+    //   alert(t('contactDetail'));
+    // } else {
+    //   const response = await fetch(
+    //     `https://api.telegram.org/bot7499883606:AAFjxrPErT1JTtLNgb0UefQENYTU5wd4Jmo/sendMessage`,
+    //     {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //       },
+    //       body: JSON.stringify({
+    //         chat_id,
+    //         text,
+    //       }),
+    //     }
+    //   );
+    let contact = 'Everbestlab uz -- tg: ' + username + ' email: ' + email + ' tel:' + phoneNum;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (phoneNum.length < 9 && !emailRegex.test(email) && username.length == 0) {
       alert(t('contactDetail'));
     } else {
-      const response = await fetch(
-        `https://api.telegram.org/bot7499883606:AAFjxrPErT1JTtLNgb0UefQENYTU5wd4Jmo/sendMessage`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            chat_id,
-            text,
-          }),
-        }
-      );
+      const myHeaders = new Headers();
+      myHeaders.append('Content-Type', 'application/json');
 
-      if (response.ok) {
-        alert(t('msgSuccess'));
-        setName('');
-        setEmail('');
-        setPhoneNum('');
-        setUsername('');
-        setCompany('');
-      } else {
-        alert('Error sending message');
-      }
+      const raw = JSON.stringify({
+        yourName: name,
+        email: contact,
+        text: company,
+      });
+
+      const requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow',
+      };
+
+      fetch('https://everbestlab.com/api/send', requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          console.log(result);
+          alert(t('msgSuccess'));
+          setName('');
+          setEmail('');
+          setPhoneNum('');
+          setUsername('');
+          setCompany('');
+        })
+        .catch((error) => {
+          alert(t('msgSuccess'));
+          setName('');
+          setEmail('');
+          setPhoneNum('');
+          setUsername('');
+          setCompany('');
+          console.log(error);
+        });
     }
   }
+
   const contactMethods = [
     { name: t('button.phoneNum'), val: 1 },
     { name: t('button.email'), val: 2 },

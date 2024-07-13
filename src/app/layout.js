@@ -21,7 +21,8 @@ import { SettingsDrawer, SettingsProvider } from 'src/components/settings';
 
 export const metadata = {
   title: 'Onlayn savdo mexanizmini yaratamiz',
-  description: "Elektron savdo platformangizni shakllantiramiz va barcha muvaffaqiyatli top e-kommersiyalar qatoriga qo'shamiz.",
+  description:
+    "Elektron savdo platformangizni shakllantiramiz va barcha muvaffaqiyatli top e-kommersiyalar qatoriga qo'shamiz.",
   keywords: 'Tashkent, Id, Software, Development, Company, Everbestlab',
   themeColor: '#000000',
   manifest: '/manifest.json',

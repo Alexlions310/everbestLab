@@ -156,8 +156,7 @@ export default function Header() {
                 sx={{ padding: '10px 20px', fontSize: '16px', fontWeight: '500' }}
                 variant="contained"
                 color="primary"
-                target="_blank"
-                href={'/'}
+                href={'#contact-us'}
                 area-label="Free Consulting"
               >
                 {t('button.freeConsulting')}

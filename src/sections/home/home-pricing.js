@@ -271,9 +271,8 @@ function PlanCard({ plan, sx, theme, ...other }) {
       <Stack alignItems="center" mt={'auto'}>
         <Button
           color="primary"
-          target="_blank"
           variant={plusLicense ? 'contained' : 'outlined'}
-          href={'/'}
+          href={'#contact-us'}
           fullWidth={!mdUp}
           aria-label="send form"
         >
